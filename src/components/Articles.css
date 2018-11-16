@@ -1,0 +1,101 @@
+.News {
+  top: 2.6em;
+  position: absolute;
+  display: flex;
+  font-size: 1.6em;
+  width: 95vw;
+  flex-direction: column;
+  background-color: white;
+}
+
+.Header {
+  text-align: center;
+}
+
+.Articles-Container {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: content;
+  justify-content: center;
+}
+
+.Article {
+  flex-basis: auto;
+  width: 45%;
+  min-width: 15em;
+  border-radius: 1%;
+  border-color: grey;
+  border-width: .1em;
+  border-style: solid;
+  padding: .5%;
+  margin: .1%;
+  background-color: white;
+}
+
+.URL-To-Image {
+  max-width: 10em;
+  float: right;
+}
+
+.URL-To-Image:hover {
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.URL-To-Article {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underwhite;
+}
+
+.URL-To-Article:hover::after {
+  display: block;
+  content: attr(href);
+  color: black;
+  background-color: #cccccc;
+  transform: translate(2em, -0.5em);
+  z-index: 140;
+}
+
+.id {
+  display: none;
+}
+
+.Name {
+  display: none;
+}
+
+.Author {
+  display: none;
+}
+
+.Content {
+  display: none;
+}
+
+.App-Footer {
+  background-color: brown;
+  height: 1em;
+  padding: 2em;
+  width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.App-Footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .Article {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

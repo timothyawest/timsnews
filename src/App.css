@@ -1,0 +1,36 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,*::before,*:after{
+  box-sizing: inherit;
+}
+
+body {
+  background-color:white;
+  font-weight:400;
+  font-family:sans-serif;
+  line-height: 1.6;
+}
+
+
+.Main-Body{
+  display:flex;
+  flex-direction: column;
+  width:100vw;
+  background-color: blue;
+}
+
+
+.App-Footer{
+  background-color: yellow;
+  display:flex;
+  height: 20em;
+  width: 100vw;
+}
